@@ -1,5 +1,4 @@
 import React from "react";
-import Product from "./Product";
 
 const Home = () => {
     return (
@@ -12,7 +11,6 @@ const Home = () => {
                         <p class="card-text lead fs-2">CHECKOUT FESTIVE COLLECTION</p>
                     </div>
                 </div>
-                <Product/>
             </div>
         </>
     )

@@ -1,0 +1,11 @@
+.button{
+  margin-left: 500px;
+  float: right;
+}
+.home{
+  width: 98%;
+  height: 80%;
+}
+.cart{
+  display: flex;
+}
