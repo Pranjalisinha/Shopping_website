@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom';
+import Navbar from './Navbar';
 
 const Register = () => {
     const [Name,setName]=useState("")
@@ -43,6 +44,7 @@ const Register = () => {
     }
   return (
     <>
+    <Navbar/>
         <div className="container my-5 py-0">
                 <div className="row">
                     <div className="col-12 mb-2">

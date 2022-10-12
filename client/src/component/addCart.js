@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import {useDispatch} from 'react-redux'
 import { AddCart, DeleteCart } from "../Redux/action";
 import {useNavigate} from 'react-router-dom';
+import Navbar2 from "./Navbar2";
 
 const AddItem = () =>{
     const Navigate=useNavigate()
@@ -29,7 +30,7 @@ const AddItem = () =>{
              "Content-Type": "application/json"
             },
           }).then((res) => {
-            Navigate("/")
+            Navigate("/products")
         
        
           }).catch((err) => {
@@ -38,6 +39,7 @@ const AddItem = () =>{
     }
     return (
         <>
+        <Navbar2/>
                 {product.map((product)=>
                  <div className="container py-5">
                  <div className="row ms-4">

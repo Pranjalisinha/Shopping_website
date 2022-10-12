@@ -1,5 +1,9 @@
 .button{
-  margin-left: 400px;
+  margin-left: 500px;
+  float: right;
+}
+.button1{
+  margin-left: 600px;
   float: right;
 }
 .home{

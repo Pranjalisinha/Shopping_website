@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Skeleton from 'react-loading-skeleton';
 import { Link } from "react-router-dom";
+import Navbar2 from "./Navbar2";
 
 const Product = () => {
     const [data, setData] = useState([]);
@@ -70,6 +71,7 @@ const Product = () => {
     }
     return (
         <div>
+             <Navbar2/>
             <div className="container my-5 py-5">
                 <div className="row">
                     <div className="col-12 mb-5">

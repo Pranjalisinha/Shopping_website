@@ -1,6 +1,5 @@
 import './App.css';
 import Home from './component/Home';
-import Navbar from './component/Navbar';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Product from './component/Product';
 import Cart from './component/Cart';
@@ -14,7 +13,6 @@ function App() {
     <>
     
     <BrowserRouter>
-    <Navbar/>
     <Routes>
     <Route path='/Register' element={<Register/>}/>
     <Route path='/signin' element={<SignIn/>}/>

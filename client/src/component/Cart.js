@@ -4,6 +4,7 @@ import { AddCart } from "../Redux/action";
 import {useParams} from "react-router";
 import Skeleton from 'react-loading-skeleton';
 import { Link } from "react-router-dom";
+import Navbar2 from "./Navbar2";
 
 const Cart =() =>{
 
@@ -63,6 +64,7 @@ const Cart =() =>{
 
     return(
         <>
+        <Navbar2/>
         <div className="container py-4">
             <div className="row py-5">
                 {loading ? <Loading/> : <ShowCart/>}

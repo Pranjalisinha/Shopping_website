@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Navbar from './Navbar'
 
 const SignIn = () => {
     
@@ -36,6 +37,7 @@ const SignIn = () => {
   return (
 
     <>
+    <Navbar/>
     <div className="container my-5 py-0">
             <div className="row">
                 <div className="col-12 mb-2">

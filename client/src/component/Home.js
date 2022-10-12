@@ -1,8 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 const Home = () => {
     return (
         <>
+        <Navbar/>
             <div className="home">
                 <div class="card bg-dark text-white">
                     <img class="card-img" src="background_image.jpg" alt="shopping" />

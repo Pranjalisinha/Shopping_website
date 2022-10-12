@@ -1,11 +1,15 @@
 import React from "react";
-import { Link} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-const Navbar = () => {
+const Navbar2 = () => {
+  const Navigate = useNavigate();
       const state = useSelector((state) => state.handleCart)
 
-
+      const logoutHandler = () =>{
+        localStorage.setItem("authorization", "")
+        Navigate("/signin");
+    }
     return (
         <>
            <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,11 +41,9 @@ const Navbar = () => {
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <div className="button">
-    <Link to='/signin'><a href="" className="btn btn-outline-dark">
-            <li className="fa fa-sign-in ms-1"></li>Login</a></Link>
-            <Link to='/Register'><a href="" className="btn btn-outline-dark ms-2">
-            <li className="fa fa-user-plus ms-1"></li>Register</a></Link>
+    <div className="button1">
+            <a href="" className="btn btn-outline-dark" onClick={()=>{logoutHandler()}}>
+            <li className="fa fa-sign-out ms-1"></li>Log Out</a>
             <Link to='/addCart'><a href="" className="btn btn-outline-dark ms-2">
            <li className="fa fa-shopping-cart ms-1"></li>Cart ({state.length})</a></Link>
     </div>
@@ -50,4 +52,4 @@ const Navbar = () => {
         </>
     )
 }
-export default Navbar;
+export default Navbar2;
